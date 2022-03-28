@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.3">
+  <hashTree>
+    <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Test Fragment" enabled="false"/>
+    <hashTree>
+      <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="PHV_Q_FLAG" enabled="true">
+        <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+        <stringProp name="RegexExtractor.refname">PHV_Q_FLAG</stringProp>
+        <stringProp name="RegexExtractor.regex">&lt;input value=&quot;(.+)&quot; type=&quot;hidden&quot; name=&quot;confirm_details_form\[taxi_and_correct_type\]&quot; id=&quot;confirm_details_form_taxi_and_correct_type</stringProp>
+        <stringProp name="RegexExtractor.template">$1$</stringProp>
+        <stringProp name="RegexExtractor.default">NONE</stringProp>
+        <stringProp name="RegexExtractor.match_number">1</stringProp>
+        <stringProp name="Sample.scope">all</stringProp>
+      </RegexExtractor>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
